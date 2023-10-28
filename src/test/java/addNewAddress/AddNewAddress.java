@@ -88,11 +88,12 @@ public class AddNewAddress {
     public void deleteSuccessAlertIsDisplayedAndAddressWithDataIsNotOnTheList(String alias, String address) {
         String alertSuccessText = addressesPage.getAlertDeleteSuccessText();
         Assert.assertEquals("Address successfully deleted!", alertSuccessText);
-        String displayedAlias = addressesPage.getLastAddressAlias().getText();
-        String displayedAddressDetails = addressesPage.getAddedAddressDetails().getText();
-        Assert.assertFalse(displayedAlias.contains(alias));
-        Assert.assertFalse(displayedAddressDetails.contains(address));
 
+        String displayedAlias = addressesPage.getLastAddressAlias().getText();
+        Assert.assertNotEquals(alias, displayedAlias);
+
+        String displayedAddressDetails = addressesPage.getAddedAddressDetails().getText();
+        Assert.assertFalse(displayedAddressDetails.contains(address));
     }
     @After
     public void tearDown() {

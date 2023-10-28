@@ -12,8 +12,8 @@ Feature: Log in and add new address
     And added address is displayed with proper data "<alias>" "<address>" "<city>" "<zipcode>" "<country>" "<phone>"
     Examples:
       | email                        | password  | alias          | address              | city      | zipcode | country        | phone          |
-#      | euhusxlmggfextjier@cwmxc.com | password1 | First Address  | 209 Comodo St.       | Quarona   | 54223   | United Kingdom | (699) 423-7411 |
-      | luiepmnvnpuunhruhc@cazlg.com | password2 | Second Address | 7776 Gravida         | Boston    | T4V 3V4 | United Kingdom | (508) 718-4987 |
+      | euhusxlmggfextjier@cwmxc.com | password1 | First Address  | 209 Comodo St.       | Quarona   | 54223   | United Kingdom | (699) 423-7411 |
+#      | luiepmnvnpuunhruhc@cazlg.com | password2 | Second Address | 7776 Gravida         | Boston    | T4V 3V4 | United Kingdom | (508) 718-4987 |
 #      | euhusxlmggfextjier@cwmxc.com | password1 | Third Address  | 5513 Scelerisque St. | Dipignano | 7763    | United Kingdom | (457) 568-6960 |
 #      | luiepmnvnpuunhruhc@cazlg.com | password2 | Fourth Address | 8117 Lorem Rd        | Copiapa   | 51819   | United Kingdom | 1-964-306-3284 |
 

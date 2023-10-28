@@ -5,16 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7b38846-aa2d-4cd7-8a6c-302ee21a48a8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/screenshots/orderInfo1698478620548.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/orderInfo1698478627896.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/orderInfo1698486706149.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/orderInfo1698486713137.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cucumber/Features/mystore-testlab.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cucumber/Features/mystore-testlab.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cucumber/Features/mystore-testlab2.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cucumber/Features/mystore-testlab2.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/orderInfo1698478620548.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/orderInfo1698478627896.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cucumber/Features/mystore-testlab.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cucumber/Features/mystore-address.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cucumber/Features/mystore-testlab2.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cucumber/Features/mystore-order.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Pages/AddressesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/AddressesPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/addNewAddress/AddNewAddress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/addNewAddress/AddNewAddress.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/addNewAddress/AddNewAddressTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/addNewAddress/AddNewAddressTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/placeOrder/PlaceOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/placeOrder/PlaceOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/placeOrder/PlaceOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/placeOrder/PlaceOrderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +72,7 @@
       <recent name="Pages" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AddNewAddressTest">
+  <component name="RunManager" selected="JUnit.PlaceOrderTest">
     <configuration name="Scenario: Add address and delete address" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/Cucumber/Features/mystore-testlab.feature" />
@@ -110,9 +113,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PlaceOrderTest" />
         <item itemvalue="JUnit.AddNewAddressTest" />
         <item itemvalue="Cucumber Java.Scenario: Add address and delete address" />
-        <item itemvalue="JUnit.PlaceOrderTest" />
       </list>
     </recent_temporary>
   </component>

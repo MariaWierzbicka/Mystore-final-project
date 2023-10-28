@@ -1,6 +1,7 @@
 package placeOrder;
 
 import Pages.*;
+import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.bs.A;
 import io.cucumber.java.en.And;
@@ -9,7 +10,6 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.apache.commons.io.FileUtils;
 import org.checkerframework.checker.regex.qual.Regex;
-import org.junit.After;
 import org.junit.Assert;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -155,7 +155,7 @@ public class PlaceOrder {
     }
 
     @After
-    public void after() {
+    public void tearDown() {
         driver.close();
         driver.quit();
     }

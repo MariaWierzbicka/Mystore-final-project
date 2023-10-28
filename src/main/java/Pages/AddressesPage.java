@@ -13,9 +13,9 @@ public class AddressesPage extends BasePage{
     @FindBy(className="alert-success")
     private WebElement alertSuccess;
     @FindBy(xpath = "(//*[@class=\"address-body\"])[last()]/h4")
-    private WebElement addedAddressAlias;
+    private WebElement lastAddressAlias;
     @FindBy(xpath = "(//*[@class=\"address-body\"])[last()]/address")
-    private WebElement addedAddressDetails;
+    private WebElement lastAddressDetails;
     @FindBy(xpath = "(//*[@class=\"address-footer\"])[last()]//*[contains(text(), \"Delete\")]")
     private WebElement addedAddressDeleteButton;
 
@@ -32,10 +32,10 @@ public class AddressesPage extends BasePage{
     }
 
     public WebElement getLastAddressAlias() {
-        return getVisibleElement(addedAddressAlias);
+        return getVisibleElement(lastAddressAlias);
     }
     public WebElement getAddedAddressDetails(){
-        return getVisibleElement(addedAddressDetails);
+        return getVisibleElement(lastAddressDetails);
     }
     public WebElement getAddedAddressDeleteButton(){
         return getVisibleElement(addedAddressDeleteButton);
