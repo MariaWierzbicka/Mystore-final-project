@@ -21,6 +21,7 @@ import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
+import java.util.Date;
 
 public class PlaceOrder {
 
@@ -148,7 +149,9 @@ public class PlaceOrder {
         File orderInfoScreenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 */
         File orderInfoScreenshot = orderConfirmationPage.getConfirmationCard().getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(orderInfoScreenshot, new File("C:\\CodersLab\\Zaliczenie\\mystore-testlab_task2\\screenshots\\orderInfo.png"));
+        long timeMillis = new Date().getTime();
+        FileUtils.copyFile(orderInfoScreenshot, new File("C:\\CodersLab\\Zaliczenie\\Mystore-final-project\\screenshots\\orderInfo" + timeMillis + ".png"));
+
     }
 
     @After

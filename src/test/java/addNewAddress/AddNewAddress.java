@@ -63,13 +63,13 @@ public class AddNewAddress {
 
     @Then("success alert is displayed")
     public void successAlertIsDisplayed() {
-        String alertSuccessText = addressesPage.getAlertSuccessText();
+        String alertSuccessText = addressesPage.getAlertAddSuccessText();
         Assert.assertEquals("Address successfully added!", alertSuccessText);
 
     }
     @And("added address is displayed with proper data \"(.*)\" \"(.*)\" \"(.*)\" \"(.*)\" \"(.*)\" \"(.*)\"$")
     public void addedAddressIsDisplayedWithProperData(String alias, String address, String city, String zipcode, String country, String phone) {
-        String displayedAlias = addressesPage.getAddedAddressAlias().getText();
+        String displayedAlias = addressesPage.getLastAddressAlias().getText();
         Assert.assertEquals(alias, displayedAlias);
         String displayedAddressDetails = addressesPage.getAddedAddressDetails().getText();
         Assert.assertTrue(displayedAddressDetails.contains(address));
@@ -78,21 +78,25 @@ public class AddNewAddress {
         Assert.assertTrue(displayedAddressDetails.contains(country));
         Assert.assertTrue(displayedAddressDetails.contains(phone));
     }
-//    @And("added address is displayed with proper data \"(.*)\" \"(.*)\" \"(.*)\" \"(.*)\" \"(.*)\" \"(.*)\"$")
-//    public void addedAddressIsDisplayedWithProperData(String alias, String address, String city, String zipcode, String country, String phone) {
-//        String displayedAlias = addressesPage.getAddedAddressAlias().getText();
-//        Assert.assertEquals(alias, displayedAlias);
-//        String givenAddressDetails = "${addresscity;
-//        String displayedAddressDetails = addressesPage.getAddedAddressDetails().getText();
-//        System.out.println(displayedAddressDetails);
-//        Assert.assertTrue(displayedAddressDetails.contains(givenAddressDetails));
-//
-//    }
 
+    @Then("delete button is clicked")
+    public void deleteButtonIsClicked() {
+    addressesPage.clickAddedAddressDeleteButton();
+    }
+
+    @And("^delete success alert is displayed and address with data \"(.*)\" \"(.*)\" is not on the list$")
+    public void deleteSuccessAlertIsDisplayedAndAddressWithDataIsNotOnTheList(String alias, String address) {
+        String alertSuccessText = addressesPage.getAlertDeleteSuccessText();
+        Assert.assertEquals("Address successfully deleted!", alertSuccessText);
+        String displayedAlias = addressesPage.getLastAddressAlias().getText();
+        String displayedAddressDetails = addressesPage.getAddedAddressDetails().getText();
+        Assert.assertFalse(displayedAlias.contains(alias));
+        Assert.assertFalse(displayedAddressDetails.contains(address));
+
+    }
     @After
     public void tearDown() {
         driver.close();
         driver.quit();
     }
-
 }

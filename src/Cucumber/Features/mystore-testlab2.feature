@@ -5,8 +5,8 @@ Feature: Log in and place an order
     When sign in button is clicked
     And valid <email> and <password> are given and sign in button is clicked
     And user navigates to the clothes section
-#    And user navigates to product page by clicking on its name // Alternative way
     And user navigates to <product> page by clicking on its name
+    #    And user navigates to product page by clicking on its name // Alternative way
     And chooses size <size> and quantity <quantity>
     And adds product to cart
     And clicks proceed to checkout in the success popup
