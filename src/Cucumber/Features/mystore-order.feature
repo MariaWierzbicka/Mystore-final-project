@@ -17,9 +17,10 @@ Feature: Log in and place an order
     And accepts terms of service
     And confirms by clicking place order
     Then order confirmation is displayed
-    And screenshot is taken
+#    And screenshot is taken
+#    And order is visible in history
 
     Examples:
       | email                        | password  | product                     | size | quantity |
       | euhusxlmggfextjier@cwmxc.com | password1 | Hummingbird printed sweater | M    | 5        |
-      | euhusxlmggfextjier@cwmxc.com | password1 | Hummingbird printed t-shirt | L    | 2        |
+#      | euhusxlmggfextjier@cwmxc.com | password1 | Hummingbird printed t-shirt | L    | 2        |

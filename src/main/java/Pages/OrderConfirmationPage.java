@@ -12,11 +12,25 @@ public class OrderConfirmationPage extends BasePage{
     private WebElement confirmationAlert;
     @FindBy(className = "definition-list")
     private WebElement confirmationCard;
+    @FindBy(id="order-reference-value")
+    private WebElement orderReferenceValue;
+    @FindBy(className="account");
+    private WebElement accountLink;
+
     public WebElement getConfirmationAlert() {
         return getVisibleElement(confirmationAlert);
     }
     public WebElement getConfirmationCard() {
         return getVisibleElement(confirmationCard);
     }
+    public String getReferenceValueNumber(){
+        String text = orderReferenceValue.getText();
+        String orderNumber = text.replace("Order reference: ", "");
+        return orderNumber;
+    }
+    public void goToAccount() {
+        accountLink.click();
+    }
+
 
 }

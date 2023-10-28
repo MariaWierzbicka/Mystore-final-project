@@ -154,10 +154,15 @@ public class PlaceOrder {
 
     }
 
-    @After
-    public void tearDown() {
-        driver.close();
-        driver.quit();
+    @And("order is visible in history")
+    public void orderIsVisibleInHistory() {
+        orderConfirmationPage.getReferenceValueNumber();
     }
+
+//    @After
+//    public void tearDown() {
+//        driver.close();
+//        driver.quit();
+//    }
 
 }

@@ -10,11 +10,21 @@ public class MyAccountPage extends BasePage{
     }
     @FindBy(xpath = "//a[@id=\"addresses-link\"]/span")
     private WebElement addressButton;
+    @FindBy(xpath = "//*[contains(text(), \"Order history and details\"]")
+    private WebElement ordersHistoryButton;
+
 
     public WebElement getAddressButton(){
         return getVisibleElement(addressButton);
     }
     public void clickAddressButton(){
         getAddressButton().click();
+    }
+
+    public void clickOrdersHistoryButton() {
+        ordersHistoryButton.click();
+    }
+    public WebElement getOrder(){
+//        WebElement order = By
     }
 }
